@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_11-27-25",
+            "content": "@@ -1,350 +0,0 @@\n-class Chinela: %0A    def __init__(self, ):%0A        self.__tamanho =  0 %0A        self.settamanho = %0A%0A    def getTamanho(self):%0A         return self.__tamanho    %0A    %0A    def setTamanho(self, valor : int):%0A        #implementar os valores da chinela...%0A%0A%0Achinela = Chinela() %0A%0Awhile chinela.getTamanho() == 0 :%0A    print(%22Digite seu tamanho de chinela%22)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-07_11-57-24",
+            "content": "class Chinela: \n    def __init__(self, ):\n        self.__tamanho =  0 \n        self.settamanho = \n\n    def getTamanho(self):\n         return self.__tamanho    \n    \n    def setTamanho(self, valor : int):\n        #implementar os valores da chinela...\n\n\nchinela = Chinela() \n\nwhile chinela.getTamanho() == 0 :\n    print(\"Digite seu tamanho de chinela\")",
+            "lines": "16"
+        }
+    ]
+}
