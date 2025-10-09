@@ -19,4 +19,4 @@ def main():
           chinelin.setTamnho(tamanho)
      print("parabens, você comprou uma chinela de tamanho ", chinelin.get_size())
 main()     
-              
+      
