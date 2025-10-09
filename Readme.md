@@ -39,7 +39,8 @@ code .vscode/settings.json
 ## Se você precisar criar um repositório do zero, pode fazer com o seguinte comando
 
 # para criando um repositório de atividades já definindo a fonte
-tko init -f myrep -l py --remote poo --enable acesso simples
+
+
 
 ## Interagindo com seu repositório
 tko open myrep

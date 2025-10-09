@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-09_12-51-15",
+            "content": "@@ -1,628 +0,0 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanhoroupa:  str = %22 %22%0A%0A    def getTamanho(self):%0A        return  self.__tamanhoroupa%0A    %0A    def setTamanho(self, valor : str):%0A        if valor == %22PP%22 or valor == %22P%22 or valor == %22M%22 or valor == %22G%22 or valor == %22GG%22:%0A            return self.__tamanhoroupa%0A        else:%0A            print(%22tamanho de roupa invalido%22)%0A            return%0A        %0A%0Adef main():%0A    blusa = Camisa()%0A    while Camisa.getTamanho() == %22 %22:%0A        tamanho_c = input(%22: %22)  %0A        blusa.setTamanho(tamanho_c)    %0A    print(%22Parabens voc%C3%AA comprou uma roupa de tamanho%22, Camisa.setTamanho())%0A%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-09_13-01-22",
+            "content": "@@ -68,16 +68,17 @@\n  str = %22\n+ \n %22%0A%0A    d\n@@ -441,23 +441,24 @@\n   while \n-blusa.s\n+Camisa.g\n etTamanh\n@@ -465,16 +465,17 @@\n o() == %22\n+ \n %22:%0A     \n@@ -621,14 +621,8 @@\n nho())%0A%0A\n-main()\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-09_13-03-21",
+            "content": "@@ -205,409 +205,93 @@\n %22PP%22\n-:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22P%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22M%22:%0A             self.__tamanhoroupa%0A             return%0A        if valor == %22G%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22GG%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22XG%22:%0A           \n+ or valor == %22P%22 or valor == %22M%22 or valor == %22G%22 or valor == %22GG%22:%0A            return\n  sel\n@@ -311,28 +311,8 @@\n upa%0A\n-            return %0A\n     \n@@ -353,34 +353,26 @@\n ho d\n-a\n+e\n  roupa \n-n%C3%A3o encontra\n+invali\n do\n-!\n %22)\n- \n %0A   \n@@ -396,16 +396,17 @@\n        %0A\n+%0A\n def main\n@@ -456,16 +456,18 @@\n tTamanho\n+()\n  == %22%22:%0A\n@@ -481,16 +481,19 @@\n  tamanho\n+_c \n = input(\n@@ -532,16 +532,18 @@\n (tamanho\n+_c\n )    %0A  \n@@ -603,17 +603,17 @@\n  Camisa.\n-g\n+s\n etTamanh\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-09_13-15-08",
+            "content": "@@ -168,16 +168,17 @@\n f, valor\n+ \n : str):%0A\n@@ -198,44 +198,403 @@\n lor \n-in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22,\n+== %22PP%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22P%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22M%22:%0A             self.__tamanhoroupa%0A             return%0A        if valor == %22G%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor == %22GG%22:%0A            self.__tamanhoroupa%0A            return %0A        if valor ==\n  %22XG%22\n-%5D\n :%0A  \n@@ -626,16 +626,28 @@\n oupa\n- = valor\n+%0A            return \n %0A   \n@@ -676,17 +676,17 @@\n  print(%22\n-T\n+t\n amanho d\n@@ -720,24 +720,30 @@\n             \n+return\n %0A        %0Ade\n@@ -799,18 +799,16 @@\n tTamanho\n-()\n  == %22%22:%0A\n@@ -932,19 +932,20 @@\n manho%22, \n-blu\n+Cami\n sa.getTa\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-10-09_13-20-50",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanhoroupa:  str = \"\"\n\n    def getTamanho(self):\n        return  self.__tamanhoroupa\n    \n    def setTamanho(self, valor: str):\n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanhoroupa = valor\n        else:\n            print(\"Tamanho da roupa n\u00e3o encontrado!\") \n            \n        \ndef main():\n    blusa = Camisa()\n    while blusa.setTamanho() == \"\":\n        tamanho= input(\": \")  \n        blusa.setTamanho(tamanho)    \n    print(\"Parabens voc\u00ea comprou uma roupa de tamanho\", blusa.getTamanho())\n\nmain()",
+            "lines": "22"
+        }
+    ]
+}
