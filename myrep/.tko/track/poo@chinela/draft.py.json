@@ -37,7 +37,7 @@
         },
         {
             "label": "2025-10-08_15-46-15",
-            "content": "class Slipper:\n    def __init__(self):\n        self.__tamanho : int = 0\n\n    def get_size(self) -> int :\n          return self.__tamanho\n    def setTamnho(self, valor: int ):\n         if valor > 19 and valor < 51: \n              print(\"fail: o valor digitado n\u00e3o corresponde a um par de chinela \")\n              self.__tamanho = valor \n              return \n         \n         \n\ndef main():\n     chinelin = Slipper()\n     while chinelin.get_size() == 0:\n          tamanho = int(input(\": \")) \n          chinelin.setTamnho(tamanho)\n     print(\"parabens, voc\u00ea comprou uma chinela de tamanho \", chinelin.get_size())\nmain()     \n              ",
+            "content": "@@ -177,17 +177,16 @@\n         \n- \n if valor\n@@ -212,84 +212,8 @@\n 1: %0A\n-              self.__tamanho = valor %0A              return%0A          else: %0A\n     \n@@ -305,22 +305,80 @@\n         \n-return\n+self.__tamanho = valor %0A              return %0A         %0A        \n  %0A%0Adef m\n@@ -611,20 +611,28 @@\n )%0Amain()     %0A      \n+        \n",
             "lines": "22"
         }
     ]

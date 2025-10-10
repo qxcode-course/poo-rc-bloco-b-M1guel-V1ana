@@ -2,8 +2,68 @@
     "patches": [
         {
             "label": "2025-10-09_14-01-48",
-            "content": "",
+            "content": "@@ -1,778 +0,0 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanhoroupa : str = %22%22%0A%0A    def setTamanho(self):%0A        return self.__tamanhoroupa    %0A    def getTamanho(self, valor : str):%0A        if valor in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            self.__tamanhoroupa = valor %0A            return %0A        else:%0A            print(%22fail: valor invalido, tente PP, P, M, G, GG ou XG%22)%0A            return%0A%0Adef main():%0A    roupa = Roupa()%0A    %0A    while roupa.getTamanho() == %22%22:%0A        line = str(input())%0A        print(%22$%22 + line)%0A        args : list%5Bstr%5D = line.strip(%22 %22) %0A        tamanho = input(%22: %22)%0A        roupa.setTamanho(tamanho)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(roupa)%0A        if args %5B0%5D == %22Size%22:%0A%0Amain()\n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-10_08-45-19",
+            "content": "@@ -737,9 +737,8 @@\n pa)%0A\n-#\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-10_08-45-33",
+            "content": "@@ -559,14 +559,18 @@\n ne.s\n-plit()\n+trip(%22 %22) \n %0A   \n@@ -733,16 +733,17 @@\n (roupa)%0A\n+#\n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-10_08-51-37",
+            "content": "@@ -98,16 +98,8 @@\n elf)\n- -%3E str \n :%0A  \n@@ -176,16 +176,8 @@\n str)\n- -%3E None\n :%0A  \n@@ -270,16 +270,36 @@\n  valor %0A\n+            return %0A\n         \n@@ -374,16 +374,35 @@\n  ou XG%22)\n+%0A            return\n %0A%0Adef ma\n@@ -487,15 +487,20 @@\n e = \n+str(\n input()\n+)\n %0A   \n@@ -562,25 +562,24 @@\n split()%0A\n-%0A\n         \n if len(a\n@@ -574,49 +574,64 @@\n     \n-if len(args) == 0: %0A            continue \n+tamanho = input(%22: %22)%0A        roupa.setTamanho(tamanho)%0A\n %0A   \n@@ -726,36 +726,13 @@\n int(\n-%22size: %22, roupa.getTamanho()\n+roupa\n )%0A  \n@@ -757,157 +757,14 @@\n == %22\n-s\n+S\n ize%22:\n-%0A            tamanho = input(%22: %22).strip()%0A            roupa.setTamanho(tamanho)%0A        else: %0A            print(%22fail: comando inv%C3%A1lido%22)    \n %0A%0Ama\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-10_09-15-00",
+            "content": "@@ -78,17 +78,17 @@\n     def \n-g\n+s\n etTamanh\n@@ -143,33 +143,33 @@\n upa    %0A    def \n-s\n+g\n etTamanho(self, \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_09-18-02",
+            "content": "@@ -1,882 +1,118 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanhoroupa : str = %22%22%0A%0A    def getTamanho(self):%0A        return self.__tamanhoroupa    %0A    def setTamanho(self, valor : str):%0A        if valor in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            self.__tamanhoroupa = valor %0A        else:%0A            print(%22fail: valor invalido, tente PP, P, M, G, GG ou XG%22)%0A%0Adef main():%0A    roupa = Roupa()%0A    %0A    while roupa.getTamanho() == %22%22:%0A        line = input()%0A        print(%22$%22 + line)%0A        args : list%5Bstr%5D = line.split()%0A%0A        if len(args) == 0: %0A            continue %0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(%22size: %22, roupa.getTamanho())%0A        if args %5B0%5D == %22size%22:%0A            tamanho = input(%22: %22).strip()%0A            roupa.setTamanho(tamanho)%0A        else: %0A            print(%22fail: comando inv%C3%A1lido%22)    %0A%0Amain()\n+@@ -90,24 +90,32 @@%0A amanho(self)%0A+ -%253E str %0A :%250A        re%0A@@ -180,16 +180,24 @@%0A r : str)%0A+ -%253E None%0A :%250A      %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-10_09-19-51",
+            "content": "@@ -670,16 +670,17 @@\n t(%22size:\n+ \n %22, roupa\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_09-20-06",
+            "content": "@@ -1,883 +1,106 @@\n-class Roupa:%0A    def __init__(self):%0A        self.__tamanhoroupa : str = %22%22%0A%0A    def getTamanho(self):%0A        return self.__tamanhoroupa    %0A    def setTamanho(self, valor : str):%0A        if valor in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            self.__tamanhoroupa = valor %0A        else:%0A            print(%22fail: valor invalido, tente PP, P, M, G, GG ou XG%22)%0A%0Adef main():%0A    roupa = Roupa()%0A    %0A    while roupa.getTamanho() == %22%22:%0A        line = input()%0A        print(%22$%22 + line)%0A        args : list%5Bstr%5D = line.split()%0A%0A        if len(args) == 0: %0A            continue %0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22show%22:%0A            print(%22size:%22, roupa.getTamanho())%0A        elif args %5B0%5D == %22size%22:%0A            tamanho = input(%22%22).strip()%0A            roupa.setTamanho(tamanho)%0A        else: %0A            print(%22fail: comando inv%C3%A1lido%22)    %0A%0Amain()\n+@@ -620,26 +620,24 @@%0A eak%250A        %0A-el%0A if args%255B0%255D =%0A@@ -701,18 +701,16 @@%0A         %0A-el%0A if args %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2025-10-10_09-37-32",
+            "content": "@@ -744,30 +744,36 @@\n     \n-if len(args) %3E 1:%0A    \n+tamanho = input(%22%22).strip()%0A\n     \n@@ -801,15 +801,15 @@\n nho(\n-args%5B1%5D\n+tamanho\n )%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_09-48-49",
+            "content": "@@ -269,16 +269,101 @@\n = valor \n+%0A        else:%0A            print(%22fail: valor invalido, tente PP, P, M, G, GG ou XG%22)\n %0A%0Adef ma\n@@ -844,52 +844,24 @@\n il: \n-valor\n+comando\n  inv\n-a\n+%C3%A1\n lido\n-, tente PP, P, M, G, GG ou XG \n %22)  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_09-49-58",
+            "content": "@@ -273,93 +273,8 @@\n lor \n-%0A        else:%0A            print(%22fail: valor invalido, tente PP, P, M, G, GG ou XG%22)\n %0A%0Ade\n@@ -715,17 +715,16 @@\n rgs%5B1%5D)%0A\n-%0A\n         \n@@ -759,24 +759,52 @@\n il: \n-comando\n+valor\n  inv\n-%C3%A1\n+a\n lido\n+, tente PP, P, M, G, GG ou XG \n %22)  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-10_09-50-18",
+            "content": "@@ -845,51 +845,24 @@\n il: \n-valor\n+comando\n  inv\n-a\n+%C3%A1\n lido\n-, tente PP, P, M, G, GG ou XG\n %22)  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_09-51-01",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanhoroupa : str = \"\"\n\n    def getTamanho(self):\n        return self.__tamanhoroupa    \n    def setTamanho(self, valor : str):\n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanhoroupa = valor \n        else:\n            print(\"fail: valor invalido, tente PP, P, M, G, GG ou XG\")\n\ndef main():\n    roupa = Roupa()\n    \n    while roupa.getTamanho() == \"\":\n        line = input()\n        print(\"$\" + line)\n        args : list[str] = line.split()\n\n        if len(args) == 0: \n            continue \n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(\"size:\", roupa.getTamanho())\n        elif args [0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n\n        else: \n            print(\"fail: valor invalido, tente PP, P, M, G, GG ou XG\")    \n\nmain()",
+            "lines": "34"
         }
     ]
 }
