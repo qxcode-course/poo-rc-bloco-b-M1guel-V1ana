@@ -5,7 +5,7 @@ class Camisa:
     def getTamanho(self): #obter 
         return  self.__tamanhoroupa
     
-    def setTamanho(self, valor: str): #definir valores 
+    def setTamanho(self, valor: str): #definir valores ou adicionar valores a algo. 
         if valor in ["PP", "P", "M", "G", "GG", "XG"]:
             self.__tamanhoroupa = valor
         else:
