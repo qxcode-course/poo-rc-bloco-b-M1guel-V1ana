@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-14_16-44-38",
+            "content": "@@ -1,489 +0,0 @@\n-class Watch:%0A    def __init__(self, hora: int, minuto: int, segundo: int):%0A        self.hora = hora %0A        self.minuto = minuto %0A        self.segundo = segundo %0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.hora%7D:%7Bself.minuto%7D:%7Bself.segundo%7D%22%0A    %0A%0A%0Adef main():%0A    relogio = Watch()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = split(%22 %22)%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(relogio)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-14_16-52-34",
+            "content": "@@ -213,20 +213,16 @@\n elf.hora\n-:02d\n %7D:%7Bself.\n@@ -227,20 +227,16 @@\n f.minuto\n-:02d\n %7D:%7Bself.\n@@ -246,12 +246,8 @@\n undo\n-:02d\n %7D%22%0A \n@@ -371,26 +371,8 @@\n s = \n-list%5Bargs%5D = line.\n spli\n@@ -456,16 +456,16 @@\n %22show%22:%0A\n+\n         \n@@ -486,11 +486,4 @@\n gio)\n-%0Amain()\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-14_16-55-46",
+            "content": "@@ -300,18 +300,8 @@\n tch(\n-%22%22, %22%22, %22%22\n )%0A%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-14_16-56-40",
+            "content": "@@ -388,16 +388,29 @@\n   args =\n+ list%5Bargs%5D =\n  line.sp\n@@ -414,16 +414,17 @@\n .split(%22\n+ \n %22)%0A%0A    \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-14_16-57-11",
+            "content": "@@ -1,531 +1,214 @@\n-class Watch:%0A    def __init__(self, hora:\n+@@ -42,13 +42,8 @@%0A \n  int\n+%0A-\n  = 0 \n+%0A \n , mi\n-nuto: int=0 , segundo: int=0):%0A        self.hora = hora %0A        self.minuto = minuto %0A        self.segundo =  segundo%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself.hora:02d%7D:%7Bself.minuto:02d%7D:%7Bself.segundo:02d%7D%22%0A    %0A%0A%0Adef main():%0A    relogio = Watch(%22%22, %22%22, %22%22)%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(relogio)%0Amain()\n+%0A@@ -55,11 +55,8 @@%0A  int%0A-=0 %0A , se%0A@@ -69,10 +69,8 @@%0A  int%0A-=0%0A ):%250A %0A@@ -150,17 +150,16 @@%0A do =%0A- %0A  segundo%0A %250A%250A  %0A@@ -154,17 +154,17 @@%0A  segundo%0A-%250A%0A+ %0A %250A    def%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-14_17-04-29",
+            "content": "@@ -1,524 +1,153 @@\n-class Watch:%0A    def __init__(self, hora: int = 0 , minuto: int=0 , segundo: int=0):%0A        self.hora = hora %0A        self.minuto = minuto %0A        self.segundo =  segundo%0A%0A    def __str__(self):%0A        return f%22%7Bself.hora:02d%7D:%7Bself.minuto:02d%7D:%7Bself.segundo:02d%7D%22%0A    %0A%0A%0Adef main():%0A    relogin = Watch(%22%22, %22%22, %22%22)%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(relogin)%0A\n+@@ -188,16 +188,23 @@%0A __(self)%0A+ -%253E str%0A :%250A      %0A@@ -297,17 +297,17 @@%0A   relogi%0A-n%0A+o%0A  = Watch%0A@@ -515,17 +515,17 @@%0A t(relogi%0A-n%0A+o%0A )%250A\n main()\n+%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-14_17-08-39",
+            "content": "@@ -1,8 +1,29 @@\n+@@ -1,252 +1,119 @@%0A-\n class Wa\n@@ -26,17 +26,19 @@\n s Watch:\n-%0A\n+%250A\n     def \n@@ -100,17 +100,19 @@\n  int=0):\n-%0A\n+%250A\n         \n@@ -128,17 +128,19 @@\n  = hora \n-%0A\n+%250A\n         \n@@ -160,17 +160,19 @@\n  minuto \n-%0A\n+%250A\n         \n@@ -194,23 +194,22 @@\n  segundo\n-%0A    %0A%0A\n+%250A%250A\n     def \n@@ -222,17 +222,19 @@\n _(self):\n-%0A\n+%250A\n         \n@@ -245,10 +245,14 @@\n rn f\n-%22%7B\n+%2522%257B\n int(\n@@ -269,31 +269,210 @@\n :02d\n-%7D:%7Bint(self.min\n+%257D:%257B%0A+@@ -208,20 +208,16 @@%250A turn f%252522%25257B%250A-int(%250A self.hor%250A@@ -217,28 +217,23 @@%250A elf.hora%250A-)%250A :02d%25257D:%25257B%250A-%0A int(%0A+%250A %0A self.min%0A uto)%0A@@ -112,295 +112,112 @@%0A .min%0A-\n uto):02d\n %7D:%7Bi\n@@ -471,11 +471,15 @@\n :02d\n-%7D:%7B\n+%257D:%257B\n int(\n@@ -499,18 +499,30 @@\n :02d\n-%7D%22%0A    %0A%0A%0A\n+%257D%2522%250A    %250A%250A%250A\n def \n@@ -528,17 +528,19 @@\n  main():\n-%0A\n+%250A\n     relo\n@@ -555,21 +555,37 @@\n tch(\n-%22%22, %22%22, %22%22)%0A%0A\n+%2522%2522, %2522%2522, %2522%2522)%250A%250A\n     \n@@ -595,17 +595,19 @@\n le True:\n-%0A\n+%250A\n         \n@@ -620,17 +620,19 @@\n  input()\n-%0A\n+%250A\n         \n@@ -641,19 +641,23 @@\n int(\n-%22$%22\n+%2522$%2522\n  + line)\n %0A   \n@@ -652,17 +652,19 @@\n  + line)\n-%0A\n+%250A\n         \n@@ -686,10 +686,14 @@\n it()\n-%0A%0A\n+%250A%250A\n     \n@@ -707,22 +707,32 @@\n args\n-%5B0%5D == %22end%22:%0A\n+%255B0%255D == %2522end%2522:%250A\n     \n@@ -744,17 +744,19 @@\n    break\n-%0A\n+%250A\n         \n@@ -766,23 +766,33 @@\n args\n-%5B0%5D\n+%255B0%255D\n  == \n-%22\n+%2522\n show\n-%22:%0A\n+%2522:%250A\n     \n@@ -817,11 +817,156 @@\n gin)\n-%0A\n+%250A\n main()\n+%0A+%250A@@ -239,20 +239,15 @@%250A nuto%250A-)%250A :02d%25257D:%25257B%250A-int(%250A self%250A@@ -254,17 +254,16 @@%250A .segundo%250A-)%250A :02d%25257D%252522%25250A %250A%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-10-14_17-19-32",
+            "content": "@@ -320,16 +320,26 @@\n = Watch(\n+%22%22, %22%22, %22%22\n )%0A%0A    w\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-14_17-22-16",
+            "content": "class Watch:\n    def __init__(self, hora: int = 0 , minuto: int=0 , segundo: int=0):\n        self.hora = hora \n        self.minuto = minuto \n        self.segundo =  segundo\n    \n\n    def __str__(self):\n        return f\"{int(self.hora):02d}:{int(self.minuto):02d}:{int(self.segundo):02d}\"\n    \n\n\ndef main():\n    relogin = Watch()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(relogin)\nmain()",
+            "lines": "25"
+        }
+    ]
+}
