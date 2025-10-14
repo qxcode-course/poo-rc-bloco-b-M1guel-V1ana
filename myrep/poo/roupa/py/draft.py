@@ -8,12 +8,12 @@ class Roupa:
         if valor in ["PP", "P", "M", "G", "GG", "XG"]:
             self.__tamanhoroupa = valor 
         else:
-            print("fail: valor invalido, tente PP, P, M, G, GG ou XG")
+            print("fail: Valor inválido, tente PP, P, M, G, GG ou XG")
 
 def main():
     roupa = Roupa()
     
-    while roupa.getTamanho() == "":
+    while True:
         line = input()
         print("$" + line)
         args : list[str] = line.split()
@@ -23,12 +23,11 @@ def main():
         if args[0] == "end":
             break
         elif args[0] == "show":
-            print("size:", roupa.getTamanho())
+            print(f"size: ({roupa.getTamanho()})")
         elif args [0] == "size":
             if len(args) > 1:
                 roupa.setTamanho(args[1])
-
-        else: 
-            print("fail: valor invalido, tente PP, P, M, G, GG ou XG")    
+            else: 
+                print("fail: Valor inválido, tente PP, P, M, G, GG ou XG")    
 
 main()
