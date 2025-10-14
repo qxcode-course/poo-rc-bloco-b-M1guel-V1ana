@@ -2,9 +2,9 @@ class Roupa:
     def __init__(self):
         self.__tamanhoroupa : str = ""
 
-    def getTamanho(self):
+    def getTamanho(self): #retorna o valor de um atriburo privado 
         return self.__tamanhoroupa    
-    def setTamanho(self, valor : str):
+    def setTamanho(self, valor : str): #altera valores 
         if valor in ["PP", "P", "M", "G", "GG", "XG"]:
             self.__tamanhoroupa = valor 
         else:

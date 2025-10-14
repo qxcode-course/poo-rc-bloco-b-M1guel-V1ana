@@ -42,8 +42,13 @@
         },
         {
             "label": "2025-10-14_17-22-16",
-            "content": "class Watch:\n    def __init__(self, hora: int = 0 , minuto: int=0 , segundo: int=0):\n        self.hora = hora \n        self.minuto = minuto \n        self.segundo =  segundo\n    \n\n    def __str__(self):\n        return f\"{int(self.hora):02d}:{int(self.minuto):02d}:{int(self.segundo):02d}\"\n    \n\n\ndef main():\n    relogin = Watch()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(relogin)\nmain()",
+            "content": "@@ -174,221 +174,8 @@\n     \n-%0A    def gethoras(self):%0A        return self.hora %0A    #def sethoras(self, valor : int, v2 : int, v):%0A     #   if valor %3E= 0 and valor %3C=  23:%0A      #      self.hora = valor %0A       #     return %0A    %0A            \n %0A%0A  \n",
             "lines": "25"
+        },
+        {
+            "label": "2025-10-14_19-00-43",
+            "content": "class Watch:\n    def __init__(self, hora: int = 0 , minuto: int=0 , segundo: int=0):\n        self.hora = hora \n        self.minuto = minuto \n        self.segundo =  segundo\n    \n    def gethoras(self):\n        return self.hora \n    #def sethoras(self, valor : int, v2 : int, v):\n     #   if valor >= 0 and valor <=  23:\n      #      self.hora = valor \n       #     return \n    \n            \n\n    def __str__(self):\n        return f\"{int(self.hora):02d}:{int(self.minuto):02d}:{int(self.segundo):02d}\"\n    \n\n\ndef main():\n    relogin = Watch()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(relogin)\nmain()",
+            "lines": "33"
         }
     ]
 }

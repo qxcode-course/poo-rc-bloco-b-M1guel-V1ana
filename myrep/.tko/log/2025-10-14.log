@@ -124,3 +124,6 @@
 2025-10-14 17:19:35, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
 2025-10-14 17:22:16, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:25
 2025-10-14 17:24:29, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-14 19:00:42, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-14 19:00:43, EXEC, v:1, k:poo@relogio, mode:FULL, rate:7, size:33
+2025-10-14 19:30:08, MOVE, v:1, k:poo@relogio, mode:BACK
