@@ -66,9 +66,8 @@ def main():
 
         if args[0] == "init":
             h, m, s = map(int, args[1:])
-            relogin.setHoras(h)
-            relogin.setMin(m)
-            relogin.setSeg(s)
+            relogin = Watch(h, m, s )
+            
 
         if args[0] == "set":
             h, m, s = map(int, args[1:])
