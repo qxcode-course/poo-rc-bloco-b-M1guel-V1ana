@@ -3,3 +3,9 @@
 2025-10-15 10:24:26, EXEC, v:1, k:poo@relogio, mode:FULL, rate:84
 2025-10-15 10:25:41, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100, size:82
 2025-10-15 10:25:45, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-15 10:30:40, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-15 10:47:45, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-15 10:47:45, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-15 10:47:45, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-15 10:47:46, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-15 10:47:46, MOVE, v:1, k:poo@notebook, mode:BACK

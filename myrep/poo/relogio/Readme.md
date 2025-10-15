@@ -1,4 +1,5 @@
-e# Garante uma hora válida no relógio
+e
+# Garante uma hora válida no relógio
 
 <!-- toch -->
 [Intro](#intro) | [Guide](#guide) | [Shell](#shell) | [Draft](#draft)
