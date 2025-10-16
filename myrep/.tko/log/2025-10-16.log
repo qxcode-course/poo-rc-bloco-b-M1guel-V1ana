@@ -34,3 +34,9 @@
 2025-10-16 09:03:33, MOVE, v:1, k:poo@notebook, mode:BACK
 2025-10-16 09:03:33, MOVE, v:1, k:poo@notebook, mode:PICK
 2025-10-16 09:03:33, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-16 09:05:57, MOVE, v:1, k:poo@motoca, mode:DOWN
+2025-10-16 09:05:58, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-16 09:06:01, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:0
+2025-10-16 09:51:02, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-16 09:51:30, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-16 09:51:32, MOVE, v:1, k:poo@motoca, mode:BACK

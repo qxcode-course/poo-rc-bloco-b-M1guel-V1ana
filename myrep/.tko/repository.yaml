@@ -20,10 +20,10 @@ tasks:
   poo@roupa: '{rate:100}'
   poo@relogio: '{rate:100}'
 flags:
-  quests: 0
+  quests: 1
   tracks: 0
-  tasks: 0
+  tasks: 2
   graph: 1
   xray: 0
 lang: py
-selected: poo@notebook
+selected: poo@motoca
