@@ -29,3 +29,8 @@
 2025-10-16 08:49:38, MOVE, v:1, k:poo@notebook, mode:BACK
 2025-10-16 08:49:39, MOVE, v:1, k:poo@notebook, mode:PICK
 2025-10-16 08:49:39, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-16 08:55:43, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-16 08:57:04, EXEC, v:1, k:poo@notebook, mode:FREE
+2025-10-16 09:03:33, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-16 09:03:33, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-16 09:03:33, MOVE, v:1, k:poo@notebook, mode:BACK
