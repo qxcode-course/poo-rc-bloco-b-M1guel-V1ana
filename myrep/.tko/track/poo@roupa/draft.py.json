@@ -137,7 +137,12 @@
         },
         {
             "label": "2025-10-14_16-39-04",
-            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanhoroupa : str = \"\"\n\n    def getTamanho(self):\n        return self.__tamanhoroupa    \n    def setTamanho(self, valor : str):\n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanhoroupa = valor \n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\ndef main():\n    roupa = Roupa()\n    \n    while True:\n        line = input()\n        print(\"$\" + line)\n        args : list[str] = line.split()\n\n        if len(args) == 0: \n            continue \n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(f\"size: ({roupa.getTamanho()})\")\n        elif args [0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n            else: \n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")    \n\nmain()",
+            "content": "@@ -99,49 +99,8 @@\n lf):\n- #retorna o valor de um atriburo privado \n %0A   \n@@ -177,25 +177,8 @@\n tr):\n- #altera valores \n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-16_00-03-41",
+            "content": "class Roupa:\n    def __init__(self):\n        self.__tamanhoroupa : str = \"\"\n\n    def getTamanho(self): #retorna o valor de um atriburo privado \n        return self.__tamanhoroupa    \n    def setTamanho(self, valor : str): #altera valores \n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanhoroupa = valor \n        else:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n\ndef main():\n    roupa = Roupa()\n    \n    while True:\n        line = input()\n        print(\"$\" + line)\n        args : list[str] = line.split()\n\n        if len(args) == 0: \n            continue \n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print(f\"size: ({roupa.getTamanho()})\")\n        elif args [0] == \"size\":\n            if len(args) > 1:\n                roupa.setTamanho(args[1])\n            else: \n                print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")    \n\nmain()",
             "lines": "33"
         }
     ]

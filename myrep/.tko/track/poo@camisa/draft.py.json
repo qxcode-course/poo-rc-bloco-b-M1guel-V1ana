@@ -22,7 +22,12 @@
         },
         {
             "label": "2025-10-09_13-20-50",
-            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanhoroupa:  str = \"\"\n\n    def getTamanho(self):\n        return  self.__tamanhoroupa\n    \n    def setTamanho(self, valor: str):\n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanhoroupa = valor\n        else:\n            print(\"Tamanho da roupa n\u00e3o encontrado!\") \n            \n        \ndef main():\n    blusa = Camisa()\n    while blusa.setTamanho() == \"\":\n        tamanho= input(\": \")  \n        blusa.setTamanho(tamanho)    \n    print(\"Parabens voc\u00ea comprou uma roupa de tamanho\", blusa.getTamanho())\n\nmain()",
+            "content": "@@ -100,16 +100,8 @@\n lf):\n- #obter \n %0A   \n@@ -179,55 +179,8 @@\n tr):\n- #definir valores ou adicionar valores a algo. \n %0A   \n@@ -407,25 +407,25 @@\n while blusa.\n-g\n+s\n etTamanho() \n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-16_00-03-52",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanhoroupa:  str = \"\"\n\n    def getTamanho(self): #obter \n        return  self.__tamanhoroupa\n    \n    def setTamanho(self, valor: str): #definir valores ou adicionar valores a algo. \n        if valor in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            self.__tamanhoroupa = valor\n        else:\n            print(\"Tamanho da roupa n\u00e3o encontrado!\") \n            \n        \ndef main():\n    blusa = Camisa()\n    while blusa.getTamanho() == \"\":\n        tamanho= input(\": \")  \n        blusa.setTamanho(tamanho)    \n    print(\"Parabens voc\u00ea comprou uma roupa de tamanho\", blusa.getTamanho())\n\nmain()",
             "lines": "22"
         }
     ]
