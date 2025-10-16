@@ -7,8 +7,8 @@ sources:
   filters: null
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-  cache_path: /home/miguel/Atividadespoo/poo-rc-bloco-b-M1guel-V1ana/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-16 00:03:05'
+  cache_path: /home/miguel/Atividadespoo/poo-rc-bloco-b-M1guel-V1ana-1/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-16 08:42:47'
   filters:
   - acesso
   - simples

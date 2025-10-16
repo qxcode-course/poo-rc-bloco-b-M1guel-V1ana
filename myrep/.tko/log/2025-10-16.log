@@ -21,3 +21,11 @@
 2025-10-16 00:18:46, MOVE, v:1, k:poo@notebook, mode:PICK
 2025-10-16 00:18:47, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100, size:3
 2025-10-16 00:19:30, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-16 08:43:51, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-16 08:43:52, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:100
+2025-10-16 08:48:18, EXEC, v:1, k:poo@notebook, mode:FREE
+2025-10-16 08:49:37, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-16 08:49:38, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-16 08:49:38, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-16 08:49:39, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-16 08:49:39, MOVE, v:1, k:poo@notebook, mode:BACK
