@@ -20,3 +20,8 @@
 2025-10-18 01:53:52, MOVE, v:1, k:poo@motoca, mode:BACK
 2025-10-18 17:57:57, MOVE, v:1, k:poo@motoca, mode:PICK
 2025-10-18 17:57:58, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-18 18:30:38, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-18 18:30:40, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0
+2025-10-18 19:47:55, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-18 19:47:55, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-18 19:47:56, MOVE, v:1, k:poo@motoca, mode:BACK
