@@ -1,0 +1,12 @@
+2025-10-18 00:24:25, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-18 00:24:26, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-18 00:29:53, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-18 00:29:53, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-18 00:29:54, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-18 00:29:54, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-18 00:29:56, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-18 00:29:57, MOVE, v:1, k:poo@roupa, mode:PICK
+2025-10-18 00:29:58, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100
+2025-10-18 00:30:53, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-18 00:33:21, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-18 00:33:31, MOVE, v:1, k:poo@motoca, mode:BACK
