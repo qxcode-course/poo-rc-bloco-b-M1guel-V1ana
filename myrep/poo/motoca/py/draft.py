@@ -42,4 +42,4 @@ class Motoca:
             print("fail: buy time first")
         elif  self.__pessoa is None:
             print("fail: empty motocycle")
-        
+        elif 
