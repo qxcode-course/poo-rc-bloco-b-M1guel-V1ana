@@ -8,7 +8,7 @@ class Pessoa:
     def getName(self):
         return self.__name 
     def __str__(self):
-        return f"{self.__name} : {self.__age}"
+        return f"{self.__name}:{self.__age}"
     
 class Motoca:
     def __init__(self, potencia : int = 1 ):
@@ -18,20 +18,20 @@ class Motoca:
 
     def __str__(self):
         if self.__pessoa is not None:
-            return f"power:{self.__potencia},time:{self.__time},person:{self.__pessoa}"
+            return f"power:{self.__potencia}, time:{self.__time}, person:({self.__pessoa})"
         else:
             return f"power:{self.__potencia}, time:{self.__time}, person:(empty)"
 
     def inserir(self, pessoa: Pessoa) -> bool:
         if self.__pessoa is not None:
-            print("fail: busy motocycle")
+            print("fail: busy motorcycle")
             return False
         self.__pessoa = pessoa 
         return True 
     
     def remover(self):
         if self.__pessoa is None:
-            print("fail: empty motocycle")
+            print("fail: empty motorcycle")
             return None 
         pessoa_removida = self.__pessoa
         self.__pessoa = None
@@ -57,7 +57,7 @@ class Motoca:
             self.__time -= timer
 
     def honk(self):
-        return "P" + ("e" * self.__potencia) + "!"
+        return "P" + ("e" * self.__potencia) + "m"
     
 def main():
     moto = Motoca()
