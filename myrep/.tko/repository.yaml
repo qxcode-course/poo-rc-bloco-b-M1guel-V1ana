@@ -7,8 +7,8 @@ sources:
   filters: null
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-  cache_path: /home/miguel/Atividadespoo/poo-rc-bloco-b-M1guel-V1ana-1/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-21 19:52:29'
+  cache_path: /home/miguel/Atividadespoo/poo-rc-bloco-b-M1guel-V1ana-1/poo-rc-bloco-b-M1guel-V1ana/myrep/.tko/cache/poo.md
+  cache_timestamp: '2025-10-25 09:41:22'
   filters:
   - acesso
   - simples
@@ -26,4 +26,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@relogio
+selected: poo@motoca
