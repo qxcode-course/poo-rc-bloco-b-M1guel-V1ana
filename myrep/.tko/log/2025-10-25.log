@@ -61,3 +61,32 @@
 2025-10-25 16:24:07, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33, size:94
 2025-10-25 16:24:36, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33, size:94
 2025-10-25 16:36:23, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 16:11:08, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 16:11:09, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33, size:94
+2025-10-25 16:11:46, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:12:19, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:12:31, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:16:58, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:17:16, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 16:17:16, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:18:06, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:18:19, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:18:36, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:22:11, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:28:28, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:29:41, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:30:53, EXEC, v:1, k:poo@motoca, mode:FREE
+2025-10-25 16:34:09, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:40:07, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:43:50, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:46:19, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:46:54, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:47:13, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:48:14, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:49:29, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 16:49:30, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:51:18, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-25 16:52:25, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-25 16:52:26, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:54:00, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-25 16:56:39, MOVE, v:1, k:poo@motoca, mode:BACK
