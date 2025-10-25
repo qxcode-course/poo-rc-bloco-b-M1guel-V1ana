@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2025-10-16_09-06-01",
-            "content": "",
+            "content": "@@ -1,1230 +0,0 @@\n-class Pessoa:%0A    def __init__(self, nome : str, age: int):%0A        self.__nome = nome %0A        self.__age = age %0A%0A    def getAge(self):%0A        return self.__age%0A    def getName(self):%0A        return self.__name %0A    def __str__(self):%0A        return f%22%7Bself.__name%7D : %7Bself.__age%7D%22%0A    %0Aclass Motoca:%0A    def __init__(self):%0A        self.__potencia : int = 1%0A        self.__time : int = 0%0A        self.__pessoa = None%0A%0A    def __str__(self):%0A        return f%22power:(%7Bself.__potencia%7D), time:(%7Bself.__time%7D), person:(%7Bself.__pessoa%7D)%22%0A        %0A    def inserir(self, pessoa: Pessoa) -%3E bool:%0A        if self.__pessoa is not None:%0A            print(%22fail: busy motocilce%22)%0A        %0A        self.__pessoa = pessoa %0A        return%0A    %0A    def remover(self):%0A        if self.__pessoa in None:%0A            print(%22fail: empty motocycle%22)%0A            return None %0A        pessoa_removida = self.__pessoa%0A        self.__pessoa = None%0A        return pessoa_removida%0A    %0A    def buyTime(self, time: int):%0A        self.__time += time %0A    %0A    def drive(self, timer: int ):%0A        if self.__time == 0 :%0A            print(%22fail: buy time first%22)%0A        elif  self.__pessoa is None:%0A            print(%22fail: empty motocycle%22)%0A        elif \n",
             "lines": "0"
+        },
+        {
+            "label": "2025-10-25_10-56-38",
+            "content": "class Pessoa:\n    def __init__(self, nome : str, age: int):\n        self.__nome = nome \n        self.__age = age \n\n    def getAge(self):\n        return self.__age\n    def getName(self):\n        return self.__name \n    def __str__(self):\n        return f\"{self.__name} : {self.__age}\"\n    \nclass Motoca:\n    def __init__(self):\n        self.__potencia : int = 1\n        self.__time : int = 0\n        self.__pessoa = None\n\n    def __str__(self):\n        return f\"power:({self.__potencia}), time:({self.__time}), person:({self.__pessoa})\"\n        \n    def inserir(self, pessoa: Pessoa) -> bool:\n        if self.__pessoa is not None:\n            print(\"fail: busy motocilce\")\n        \n        self.__pessoa = pessoa \n        return\n    \n    def remover(self):\n        if self.__pessoa in None:\n            print(\"fail: empty motocycle\")\n            return None \n        pessoa_removida = self.__pessoa\n        self.__pessoa = None\n        return pessoa_removida\n    \n    def buyTime(self, time: int):\n        self.__time += time \n    \n    def drive(self, timer: int ):\n        if self.__time == 0 :\n            print(\"fail: buy time first\")\n        elif  self.__pessoa is None:\n            print(\"fail: empty motocycle\")\n        elif ",
+            "lines": "45"
         }
     ]
 }
