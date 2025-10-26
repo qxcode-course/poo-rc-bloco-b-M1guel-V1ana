@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-25_20-19-46",
+            "content": "@@ -1,477 +0,0 @@\n-class Grafite:%0A    def __init__(self, size : int):%0A        self.__size = size%0A%0A    def getGrafite(self):%0A        return self.__size%0A    def setGrafite(self, size: int):%0A        self.__size = size %0A    def __str__%0A%0Aclass Lapiseira:%0A    def __init__(self):%0A        self.__tip = None %0A    %0A%0A    def hasGrafite(self) -%3E bool:%0A        if self.__tip is not None:%0A            return True %0A        else:%0A            return False%0A%0A    def insert(self, gra : int):%0A        if self.__size\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-25_20-33-21",
+            "content": "@@ -209,58 +209,9 @@\n tr__\n-(self):%0A        return f%22Grafite: %7Bself.__size%7Dmm%22\n+%0A\n %0Acla\n@@ -297,32 +297,40 @@\n hasGrafite(self)\n+ -%3E bool\n :%0A        return\n@@ -315,38 +315,34 @@\n %3E bool:%0A        \n-return\n+if\n  self.__tip is n\n@@ -348,16 +348,82 @@\n not None\n+:%0A            return True %0A        else:%0A            return False%0A\n %0A    def\n@@ -440,32 +440,32 @@\n lf, gra : int):%0A\n+\n         if self.\n@@ -466,14 +466,12 @@\n  self.__size\n-%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-25_20-55-11",
+            "content": "@@ -59,20 +59,20 @@\n  self.__\n-Lead\n+size\n  = size%0A\n@@ -120,20 +120,20 @@\n  self.__\n-Lead\n+size\n %0A    def\n@@ -177,20 +177,21 @@\n  self.__\n-Lead\n+size \n = size %0A\n@@ -251,19 +251,17 @@\n f.__\n-Lead\n+size\n %7Dmm%22%0A\n-%0A%0A\n clas\n@@ -394,21 +394,16 @@\n ot None%0A\n-    %0A\n     def \n@@ -425,473 +425,34 @@\n a : \n-Grafite):%0A        if self.hasGrafite():%0A            print(%22fail: ja possui grafite%22)%0A            return False%0A        self.__tip = gra%0A        return True %0A%0A    def __str__(self):%0A        return f%22calibre: %7Bself.__size%7D, grafite: %7Bself.__tip%7D %22%0A    %0A    def remover(self):%0A        if not self.hasGrafite():%0A            print(%22fail: nao tem grafite para tirar%22)%0A            return None %0A%0A        remove = self.__tip %0A        self.__tip = None %0A        return remove%0A    \n+int):%0A        if self.__size%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-25_21-21-37",
+            "content": "@@ -10,12 +10,8 @@\n fite\n-Lead\n :%0A  \n@@ -55,28 +55,28 @@\n      self.__\n-size\n+Lead\n  = size%0A%0A   \n@@ -120,20 +120,20 @@\n  self.__\n-size\n+Lead\n %0A    def\n@@ -177,21 +177,20 @@\n  self.__\n-size \n+Lead\n = size %0A\n@@ -246,20 +246,20 @@\n %7Bself.__\n-size\n+Lead\n %7Dmm%22%0A%0A%0Ac\n@@ -900,1164 +900,4 @@\n     \n-%0A    def usePerSheet(Self): #gasta o gr%C3%A1fite%0A        return 10%0A%0A%0A%0A    def writePage(self): #escreve na p%C3%A1gina %0A        if not self.hasGrafite() :%0A            print(%22fail: sem grafite%22)%0A            return%0A%0A        size = self.__tip.getGrafite()%0A        gastar = self.usePerSheet()%0A        finalzinho = size - gasta%0A%0A        if size %3C= 10:%0A            print(%22fail: grafite pequeno demais para escrever%22)%0A            return%0A        if final %3C 10 :%0A            gasto__total = size - 10 %0A            self.__tip.setGrafite(10)%0A            print(f%22fail: folha incompleta, gastou %7Bgasto__total%7Dmm%22)%0A        else:%0A            self.__tip.setGrafite(finalzinho)%0A            print(%22folha completa%22)%0A%0A        %0A        def __str__(self): # retorna o tamanho do grafite de lapiseira %0A            if self.hasGrafite():%0A                return f%22Lapiseira com %7Bself.__tip%7D%22%0A            else:%0A                return %22Lapiseira (vazia)%22%0A%0Adef main():%0A%0A    lapiseira = Lapiseira()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(lapiseira)\n",
+            "lines": "39"
+        },
+        {
+            "label": "2025-10-25_22-29-20",
+            "content": "@@ -439,20 +439,16 @@\n  Grafite\n-Lead\n ):%0A     \n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_22-29-43",
+            "content": "@@ -2069,11 +2069,4 @@\n ira)\n-%0Amain()\n",
+            "lines": "85"
+        },
+        {
+            "label": "2025-10-25_22-30-00",
+            "content": "@@ -338,35 +338,9 @@\n     \n-    self.__size = None%0A    \n+%0A\n %0A   \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_22-33-26",
+            "content": "@@ -352,27 +352,20 @@\n _size = \n-GrafiteLead\n+None\n %0A    %0A  \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_22-34-13",
+            "content": "@@ -352,20 +352,27 @@\n _size = \n-None\n+GrafiteLead\n %0A    %0A  \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_22-34-31",
+            "content": "@@ -46,12 +46,10 @@\n e : \n-floa\n+in\n t):%0A\n@@ -1655,16 +1655,60 @@\n (self): \n+# retorna o tamanho do grafite de lapiseira \n %0A       \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-25_22-39-21",
+            "content": "@@ -39,126 +39,140 @@\n lf, \n-thickness: float, hardness: str, size: int ):%0A        self.__thinckness = thickness%0A        self.__hardness = hardness\n+size : float):%0A        self.__size = size%0A%0A    def getGrafite(self):%0A        return self.__size%0A    def setGrafite(self, size: int):\n %0A   \n@@ -186,33 +186,33 @@\n lf.__size = size\n-%0A\n+ \n %0A    def usagePe\n@@ -208,29 +208,23 @@\n def \n-usagePersheet\n+__str__\n (self):%0A\n %0A   \n@@ -219,25 +219,24 @@\n (self):%0A\n-%0A\n         \n if self.\n@@ -231,56 +231,112 @@\n     \n-if self.__hardness == %22HB%22:%0A            return 1\n+return f%22Grafite: %7Bself.__size%7Dmm%22%0A%0A%0Aclass Lapiseira:%0A    def __init__(self):%0A        self.__tip = None \n %0A   \n@@ -344,56 +344,57 @@\n     \n-if \n self.__\n-hardness == %222B%22:\n+size = None\n %0A    \n-   \n+%0A\n     \n- return 2\n+def hasGrafite(self):\n %0A   \n@@ -394,34 +394,38 @@\n f):%0A        \n-if\n+return\n  self.__\n hardness == \n@@ -416,118 +416,169 @@\n f.__\n-hardness == %224B%22:\n+tip is not None\n %0A    \n+%0A\n     \n-    return 4%0A        if self.__hardness == %225B%22:%0A            return 6 %0A        e\n+def insert(self, gra : GrafiteLead):%0A        if self.hasGrafite():%0A            print(%22fail: ja possui grafite%22)%0A            return Fa\n lse\n-:\n %0A   \n@@ -586,30 +586,46 @@\n     \n-    return 0 %0A        \n+self.__tip = gra%0A        return True %0A\n %0A   \n@@ -665,110 +665,214 @@\n n f%22\n-%7Bself.__thinckness%7D:%7Bself.__hardness%7D:%7Bself.__size%7D%22%0A%0Aclass Lapiseira:%0A    def __init__(self):%0A       \n+calibre: %7Bself.__size%7D, grafite: %7Bself.__tip%7D %22%0A    %0A    def remover(self):%0A        if not self.hasGrafite():%0A            print(%22fail: nao tem grafite para tirar%22)%0A            return None %0A%0A        remove =\n  sel\n@@ -879,22 +879,16 @@\n f.__tip \n-= None\n %0A       \n@@ -900,372 +900,1164 @@\n .__t\n-hinckness\n+ip\n  = None\n-%0A\n+ %0A \n     \n-%0A%0A    def hasGrafite(self, c : float, d : str, t : int):%0A        if self.__tip is not None:%0A            print(%22j%C3%A1 existe grafite%22)%0A            return None %0A%0A        grafite = self.__tip %0A        self.__tipe = None %0A        return grafite %0A%0A    def insert(self, calibre: float):%0A        self.__thinckness = calibre %0A        self.__tip = None %0A%0A    \n+   return remove%0A    %0A    def usePerSheet(Self): #gasta o gr%C3%A1fite%0A        return 10%0A%0A%0A%0A    def writePage(self): #escreve na p%C3%A1gina %0A        if not self.hasGrafite() :%0A            print(%22fail: sem grafite%22)%0A            return%0A%0A        size = self.__tip.getGrafite()%0A        gastar = self.usePerSheet()%0A        finalzinho = size - gasta%0A%0A        if size %3C= 10:%0A            print(%22fail: grafite pequeno demais para escrever%22)%0A            return%0A        if final %3C 10 :%0A            gasto__total = size - 10 %0A            self.__tip.setGrafite(10)%0A            print(f%22fail: folha incompleta, gastou %7Bgasto__total%7Dmm%22)%0A        else:%0A            self.__tip.setGrafite(finalzinho)%0A            print(%22folha completa%22)%0A%0A        %0A        def __str__(self): %0A            if self.hasGrafite():%0A                return f%22Lapiseira com %7Bself.__tip%7D%22%0A            else:%0A                return %22Lapiseira (vazia)%22%0A%0Adef main():%0A%0A    lapiseira = Lapiseira()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args = line.split()%0A%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22show%22:%0A            print(lapiseira)%0Amain()\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-10-26_00-53-53",
+            "content": "class GrafiteLead:\n    def __init__(self, thickness: float, hardness: str, size: int ):\n        self.__thinckness = thickness\n        self.__hardness = hardness\n        self.__size = size\n\n    def usagePersheet(self):\n\n        if self.__hardness == \"HB\":\n            return 1\n        if self.__hardness == \"2B\":\n            return 2\n        if self.__hardness == \"4B\":\n            return 4\n        if self.__hardness == \"5B\":\n            return 6 \n        else:\n            return 0 \n        \n    def __str__(self):\n        return f\"{self.__thinckness}:{self.__hardness}:{self.__size}\"\n\nclass Lapiseira:\n    def __init__(self):\n        self.__tip = None\n        self.__thinckness = None\n    \n\n    def hasGrafite(self, c : float, d : str, t : int):\n        if self.__tip is not None:\n            print(\"j\u00e1 existe grafite\")\n            return None \n\n        grafite = self.__tip \n        self.__tipe = None \n        return grafite \n\n    def insert(self, calibre: float):\n        self.__thinckness = calibre \n        self.__tip = None \n\n    ",
+            "lines": "42"
+        }
+    ]
+}
