@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-rc-bloco-b-M1guel-V1ana/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-26 20:52:32'
+  cache_timestamp: '2025-10-27 05:24:28'
   filters:
   - acesso
   - simples
@@ -20,7 +20,7 @@ tasks:
   poo@roupa: '{rate:100}'
   poo@relogio: '{rate:100}'
   poo@motoca: '{rate:100}'
-  poo@grafite: '{rate:10}'
+  poo@grafite: '{rate:70}'
 flags:
   quests: 1
   tracks: 0

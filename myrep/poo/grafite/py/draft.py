@@ -1,94 +1,86 @@
 class GrafiteLead:
     def __init__(self, thickness: float, hardness: str, size: int):
-        self.__thickness = thickness
-        self.__hardness = hardness
-        self.__size = size 
+        self.thickness = thickness
+        self.hardness = hardness
+        self.size = size
 
-    def getSize(self):
-        return self.__size
+    def usePerSheet(self):
+        gastos = {"HB": 1, "2B": 2, "4B": 4, "6B": 6}
+        return gastos.get(self.hardness, 0)
     
-    def setSize(self, tamanho: int):
-        self.__size -= tamanho
-
-        if self.__size <= 0:
-            self.__size = 0 
-
-
-    def usagePerSheet(self):
-        if self.__hardness == "HB":
-            return 1
-        elif self.__hardness == "2B":
-            return 2 
-        elif self.__hardness == "4B":
-            return  4
-        elif self.__hardness == "6B":
-            return 6 
-        else:
-            return 0 
-
     def __str__(self):
-        return f"{self.__thickness}:{self.__hardness}:{self.__size}mm"
+        return f"{self.thickness}:{self.hardness}:{self.size}"
+
+    
 
 class Pencil:
     def __init__(self, thickness : float):
         self.__thickness = thickness
         self.__tip = None 
 
-    
-    def hasGrafite(self):
-        return self.__tip is not None 
-    
-    def insert(self, thickness: float, hardness: str, size : int):
+
+    def hasGrafite(self) -> bool:
+        return self.__tip is not None
+
+    def insert(self, ponta: GrafiteLead) -> bool:
         if self.hasGrafite():
             print("fail: ja existe grafite")
-            return 
-        if thickness != self.__thickness:
+            return False 
+        if ponta.thickness != self.__thickness:
             print("fail: calibre incompativel")
-            return    
-        self.__tip = GrafiteLead(thickness, hardness, size)
+            return False
+        self.__tip = ponta 
+        return True 
+
+    def __str__(self):
+        if self.hasGrafite():
+            return f"calibre: {self.__thickness}, grafite: [{self.__tip}]"
+
+        else:
+            return f"calibre: {self.__thickness}, grafite: null"
 
     
     def remove(self):
         if not self.hasGrafite():
-            print("fail: nao exite grafite")
-            return
-        remover = self.__tip 
-        self.__tip = None 
-        print(f"grafite removido: {remover}")
+            print("fail: nao existe grafite")
+            return 
+
+        remover = self.__tip
+        self.__tip = None
+        return remover
 
     def writePage(self):
         if not self.hasGrafite():
-            print("fail: nao tem grafite")
-            return 
+            print ("fail: nao existe grafite")
+            return False
         
-        usar = self.__tip.usagePerSheet()
+        grafite = self.__tip
 
-        if self.__tip.getSize() <= 10:
+
+        gasto = grafite.usePerSheet()
+
+        if gasto < 0 :
+            print("fail: dureza invalida")
+            return False
+
+        if grafite.size <= 10:
             print("fail: tamanho insuficiente")
-            return
-        if self.__tip.getSize() - usar < 10:
-            usar = self.__tip.getSize - 10
-            self.__tip.setSize(usar)
-            
-            print (f"fail: folha incompleta, gastou {usar}mm")
-        else:
-            self.__tip.setSize(usar)
-            print("folha completa")
-
-    def __str__(self):
-        if self.hasGrafite():
-            return f"calibre: {self.__thickness}, grafite{self.__tip}"
-        else:
-            return f"calibre: {self.__thickness}, grafite: null"
+            return False
+        
+        grafite.size -= gasto
+        if grafite.size < 10:
+            grafite.size = 10
+        print("fail: folha incompleta")
+        return True
 
 def main():
-
-    lapiseira = Pencil
+    lapiseira = None
 
     while True:
         line = input()
         print("$" + line)
         args = line.split()
+
 
         if args[0] == "end":
             break
@@ -98,9 +90,22 @@ def main():
             calibre = float(args[1])
             lapiseira = Pencil(calibre)
         if args[0] == "insert":
-            tamanho_grafite = float(args[1])
-            espessura = str(args[2])
-            tamanho = int(args[1])
-            lapiseira.insert(GrafiteLead(thickness, hardness, size))
+            if lapiseira:
+                esp = float(args[1])
+                dur= str(args[2])
+                tam = int(args[3])
+                grafite = GrafiteLead(esp, dur, tam)
+                lapiseira.insert(grafite)
+            else:
+                print("lapiseira nao inicializada")
+        if args[0] == "remove":
+            lapiseira.remove()
+        if args[0] == "write":
+            if lapiseira:
+                lapiseira.writePage()
+
+
+        
+
 
 main()
