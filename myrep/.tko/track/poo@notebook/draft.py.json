@@ -12,8 +12,13 @@
         },
         {
             "label": "2025-10-28_05-32-47",
-            "content": "class Notebook:\n    def __init__(self):\n        self.__ligar : bool = False\n    \n\n    def getLigar(self):\n        return self.__ligar\n    \n    def setLigar(self, valor : bool):\n        self.__ligar = valor \n        return\n    \n    def Ligar(self):\n        if not self.__ligar:\n            self.ligar = True\n            print(\"notebook ligado.\")\n        else:\n            print(\"notebook j\u00e1 est\u00e1 ligado.\")\n\n    \n\ndef main():\n    pc = Notebook()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args: list[args] = line.split()\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"mostrar\":\n            print(pc)\nmain()",
+            "content": "@@ -403,489 +403,8 @@\n %22)%0A%0A\n-    def desligar(self):%0A        if self.__ligar:%0A            self.__ligar = False%0A            print(%22notebook desligado%22)%0A        else:%0A            print(%22notebook ja esta desligado%22)%0A%0A    def usar(self, temp : int):%0A        if self.__ligar:%0A            print(f%22usado por %7Btemp%7D minutos%22)%0A        else:%0A            print(%22fail: ligue o notebook primeiro%22)%0A%0A    def mostrar(self):%0A        status = %22ligar%22 if self.__ligar else %22desligar%22%0A        print(f%22Status: %7Bstatus%7D%22)%0A        %0A\n     \n",
             "lines": "34"
+        },
+        {
+            "label": "2025-10-28_06-00-43",
+            "content": "class Notebook:\n    def __init__(self):\n        self.__ligar : bool = False\n    \n\n    def getLigar(self):\n        return self.__ligar\n    \n    def setLigar(self, valor : bool):\n        self.__ligar = valor \n        return\n    \n    def Ligar(self):\n        if not self.__ligar:\n            self.ligar = True\n            print(\"notebook ligado.\")\n        else:\n            print(\"notebook j\u00e1 est\u00e1 ligado.\")\n\n    def desligar(self):\n        if self.__ligar:\n            self.__ligar = False\n            print(\"notebook desligado\")\n        else:\n            print(\"notebook ja esta desligado\")\n\n    def usar(self, temp : int):\n        if self.__ligar:\n            print(f\"usado por {temp} minutos\")\n        else:\n            print(\"fail: ligue o notebook primeiro\")\n\n    def mostrar(self):\n        status = \"ligar\" if self.__ligar else \"desligar\"\n        print(f\"Status: {status}\")\n        \n    \n\ndef main():\n    pc = Notebook()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args: list[args] = line.split()\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"mostrar\":\n            print(pc)\nmain()",
+            "lines": "51"
         }
     ]
 }
