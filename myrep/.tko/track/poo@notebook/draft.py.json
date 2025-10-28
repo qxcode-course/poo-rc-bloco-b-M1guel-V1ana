@@ -7,8 +7,13 @@
         },
         {
             "label": "2025-10-16_00-18-47",
-            "content": "class Notebook:\n    def __init__(self):\n        smfksd",
+            "content": "@@ -46,614 +46,9 @@\n    s\n-elf.__ligar : bool = False%0A    %0A%0A    def getLigar(self):%0A        return self.__ligar%0A    %0A    def setLigar(self, valor : bool):%0A        self.__ligar = valor %0A        return%0A    %0A    def Ligar(self):%0A        if not self.__ligar:%0A            self.ligar = True%0A            print(%22notebook ligado.%22)%0A        else:%0A            print(%22notebook j%C3%A1 est%C3%A1 ligado.%22)%0A%0A    %0A%0Adef main():%0A    pc = Notebook()%0A%0A    while True:%0A        line = input()%0A        print(%22$%22 + line)%0A        args: list%5Bargs%5D = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        if args%5B0%5D == %22mostrar%22:%0A            print(pc)%0Amain()\n+mfksd\n",
             "lines": "3"
+        },
+        {
+            "label": "2025-10-28_05-32-47",
+            "content": "class Notebook:\n    def __init__(self):\n        self.__ligar : bool = False\n    \n\n    def getLigar(self):\n        return self.__ligar\n    \n    def setLigar(self, valor : bool):\n        self.__ligar = valor \n        return\n    \n    def Ligar(self):\n        if not self.__ligar:\n            self.ligar = True\n            print(\"notebook ligado.\")\n        else:\n            print(\"notebook j\u00e1 est\u00e1 ligado.\")\n\n    \n\ndef main():\n    pc = Notebook()\n\n    while True:\n        line = input()\n        print(\"$\" + line)\n        args: list[args] = line.split()\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"mostrar\":\n            print(pc)\nmain()",
+            "lines": "34"
         }
     ]
 }
