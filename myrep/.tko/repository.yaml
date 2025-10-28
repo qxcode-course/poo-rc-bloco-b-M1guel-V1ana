@@ -12,7 +12,7 @@ sources:
   type: remote
   branch: master
   cache_path: /workspaces/poo-rc-bloco-b-M1guel-V1ana/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-28 10:28:44'
+  cache_timestamp: '2025-10-28 13:23:41'
   filters:
   - acesso
   - simples
@@ -34,4 +34,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@notebook
+selected: poo@charger
