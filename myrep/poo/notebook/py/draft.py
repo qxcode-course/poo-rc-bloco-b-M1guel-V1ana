@@ -61,6 +61,8 @@ class Bateria:
         return self.__capacidade
 
 
+
+
 class NotebookBateria:
     def __init__(self):
         def.__self = False
@@ -84,6 +86,21 @@ class NotebookBateria:
         self.__ligar = False
         print("notebook desligado")
 
+    def usar(self, tempo : int):
+        if not self.__ligar:
+            print("notebook desligado"):
+            return
+        if not self.__baeria:
+            print(f"notebook atualizado com sucesso (sem bateria)")
+
+        carga = self.__baeria.getCarga()
+
+        if carga>= tempo:
+            self.__baeria.setCarga(carga - tempo)
+            print(f"usado por {tempo} minutos")
+        else:
+            self.__baeria.setCarga(0)
+            self.__ligar = False 
 
 
 
@@ -91,21 +108,3 @@ class NotebookBateria:
 
 
 
-
-
-
-
-
-def main():
-    pc = Notebook()
-
-    while True:
-        line = input()
-        print("$" + line)
-        args: list[args] = line.split()
-
-        if args[0] == "end":
-            break
-        if args[0] == "mostrar":
-            print(pc)
-main()
