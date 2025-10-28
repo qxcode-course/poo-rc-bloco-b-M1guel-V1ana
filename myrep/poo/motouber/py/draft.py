@@ -59,24 +59,22 @@ class Moto:
 
     def desembarcar(self):
         if self.__passageiro is None:
-            print("nao ha passageiro para embarcar")
-            return 
-        
+            return
         dinheiro_passageiro = self.__passageiro.getDinheiro()
-
 
         if dinheiro_passageiro >= self.__custo:
             self.__passageiro.pagarMotorista(self.__custo)
             self.__motorista.recebeDinheiro(self.__custo)
-            print(f"{self.__passageiro.getNome()}:{int(self.__passageiro.getDinheiro())} left")
+            print(f"{self.__passageiro.getNome()}:{int(self.__passageiro.getDinheiro())} left") 
         else:
-           print("fail: Passenger does not have enough money")
-           self.__motorista.pagarMotorista(dinheiro_passageiro)
-           print(f"{self.__passageiro.getNome()}:0 left")
-           self.__motorista.recebeDinheiro(self.__custo)            
+            print("fail: Passenger does not have enough money")   
+            self.__passageiro.pagarMotorista(dinheiro_passageiro)
+            print(f"{self.__passageiro.getNome()}:0 left")
+            self.__motorista.recebeDinheiro(self.__custo)
+
+        self.__custo = 0 
         self.__passageiro = None 
-        self.__custo = 0
-    
+
     def __str__(self):
         driver = f"{self.__motorista.getNome()}:{int(self.__motorista.getDinheiro())}"if self.__motorista else "None"
         passa = f"{self.__passageiro.getNome()}:{int(self.__passageiro.getDinheiro())}" if self.__passageiro else "None"
